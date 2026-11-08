@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b08">
+  <meta name="description" content="Seqora Launcher is a modern, lightweight Minecraft launcher built for profiles, modding, customization, and performance.">
+  <title>Seqora Launcher — Your Minecraft. Your Rules.</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080b08;--panel:#101610;--panel2:#131b13;--green:#b5f36a;--muted:#a0aa9b;--line:#263326;--white:#f2f6ee}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#20351a55,transparent 34%),var(--bg);color:var(--white);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.04em}.brand-mark{width:38px;height:38px;color:var(--green)}.brand span{font-size:19px}.navlinks{display:flex;gap:28px;color:#c0c9ba;font-size:14px}.navlinks a:hover{color:var(--green)}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;border-radius:9px;padding:11px 17px;font-weight:750;font-size:14px}.nav-cta,.primary{background:var(--green);color:#10170b}.hero{padding:112px 0 100px;display:grid;grid-template-columns:1.12fr .88fr;gap:60px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid #b5f36a44;background:#b5f36a0d;color:var(--green);padding:6px 11px;border-radius:99px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}h1{font-size:clamp(48px,6.4vw,76px);line-height:1.02;letter-spacing:-.055em;margin:24px 0 22px}h1 em{font-style:normal;color:var(--green)}.lead{max-width:590px;color:#b3bdb0;font-size:18px;line-height:1.75}.actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.secondary{border:1px solid #394638;background:#111811}.secondary:hover{border-color:var(--green)}.primary:hover,.nav-cta:hover{filter:brightness(1.08)}.hero-art{min-height:380px;border:1px solid #b5f36a2c;border-radius:24px;background:linear-gradient(145deg,#172416,#0b100b 68%);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:0 30px 100px #0008}.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #b5f36a19;border-radius:50%;width:390px;height:390px}.hero-art:after{width:290px;height:290px}.big-mark{width:190px;height:190px;color:var(--green);filter:drop-shadow(0 0 35px #a9f45b55);z-index:1}.art-caption{position:absolute;bottom:26px;letter-spacing:.36em;font-size:11px;color:#9cab91}.section{padding:82px 0;border-top:1px solid #ffffff10}.section-head{max-width:680px;margin-bottom:34px}.kicker{color:var(--green);font-size:12px;letter-spacing:.16em;font-weight:800;text-transform:uppercase}.section h2{font-size:clamp(30px,4vw,44px);line-height:1.12;letter-spacing:-.035em;margin:12px 0}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{padding:25px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(145deg,#121a12,#0d120d)}.feature-icon{width:39px;height:39px;border-radius:10px;background:#b5f36a13;color:var(--green);display:grid;place-items:center;font-size:19px}.feature h3{margin:18px 0 7px;font-size:18px}.feature p{margin:0;color:var(--muted);font-size:14px}.split{display:grid;grid-template-columns:1fr 1fr;gap:22px}.info-panel{padding:30px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}.info-panel h3{margin:0 0 10px}.info-panel p{color:var(--muted);margin:0}.tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.tag{font-size:12px;color:#c6d1c0;border:1px solid #354333;padding:5px 9px;border-radius:7px}.callout{padding:48px;border-radius:20px;border:1px solid #b5f36a42;background:radial-gradient(ellipse at 100% 0%,#b5f36a18,transparent 55%),#101710;display:flex;justify-content:space-between;align-items:center;gap:24px}.callout h2{margin:0 0 8px}.callout p{margin:0;color:var(--muted)}footer{padding:34px 0;color:#899486;font-size:13px;border-top:1px solid #ffffff12}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{color:var(--white);font-weight:800}.soon{font-size:11px;color:var(--green);border:1px solid #b5f36a55;border-radius:99px;padding:4px 8px;margin-left:8px;vertical-align:middle}
+    @media(max-width:800px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:75px 0 65px;gap:36px}.hero-art{min-height:300px}.grid{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}.callout{padding:30px;align-items:flex-start;flex-direction:column}}
+    @media(max-width:520px){.wrap{width:min(100% - 28px,1120px)}.grid{grid-template-columns:1fr}.hero{padding-top:58px}.lead{font-size:16px}.section{padding:62px 0}.nav{height:70px}.nav-cta{padding:9px 12px;font-size:12px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#top" aria-label="Seqora Launcher home">
+      <svg class="brand-mark" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M72 15H36L15 36v13l18 18h31v18H28" stroke="currentColor" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter"/><path d="M28 15h44v18H40L28 43" stroke="currentColor" stroke-width="7" opacity=".55"/></svg>
+      <span>SEQORA</span>
+    </a>
+    <nav class="navlinks"><a href="#features">Features</a><a href="#modding">Modding</a><a href="#performance">Performance</a><a href="#about">About</a></nav>
+    <a class="nav-cta" href="https://github.com/Seqorsy/seqora">View on GitHub ↗</a>
+  </header>
+  <main id="top">
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> A new way to play Minecraft</div>
+        <h1>Your Minecraft.<br><em>Your Rules.</em></h1>
+        <p class="lead">Meet Seqora Launcher: a modern, lightweight home for your Minecraft profiles, mods, modpacks, and adventures. Spend less time managing files and more time playing.</p>
+        <div class="actions"><a class="button primary" href="#features">Explore features&nbsp; →</a><a class="button secondary" href="https://github.com/Seqorsy/seqora">Explore the project ↗</a></div>
+      </div>
+      <div class="hero-art" aria-label="Seqora geometric logo">
+        <svg class="big-mark" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M75 13H35L13 35v16l19 19h34v18H26" stroke="currentColor" stroke-width="11" stroke-linecap="square" stroke-linejoin="miter"/><path d="M26 13h49v19H39L26 45" stroke="currentColor" stroke-width="6" opacity=".6"/></svg>
+        <div class="art-caption">BUILT FOR YOUR NEXT ADVENTURE</div>
+      </div>
+    </section>
+    <section class="section" id="features"><div class="wrap">
+      <div class="section-head"><div class="kicker">Made for players</div><h2>Everything in one place.</h2><p>From clean profile management to a complete modding workflow, Seqora is being built to make the Minecraft experience simpler.</p></div>
+      <div class="grid">
+        <article class="feature"><div class="feature-icon">▦</div><h3>Profile Management</h3><p>Create isolated profiles for different Minecraft versions, loaders, mods, and settings.</p></article>
+        <article class="feature"><div class="feature-icon">⌘</div><h3>Mod Discovery</h3><p>Discover content from Modrinth and CurseForge and organize it by profile.</p></article>
+        <article class="feature"><div class="feature-icon">⚙</div><h3>Loader Support</h3><p>Plan your setup with Vanilla, Fabric, Forge, NeoForge, and Quilt support.</p></article>
+        <article class="feature"><div class="feature-icon">◈</div><h3>Content Manager</h3><p>Manage mods, resource packs, shaders, datapacks, and configuration files.</p></article>
+        <article class="feature"><div class="feature-icon">▤</div><h3>Game Controls</h3><p>Configure Java, memory, resolution, and gameplay options before launching.</p></article>
+        <article class="feature"><div class="feature-icon">✧</div><h3>Crash Insights</h3><p>Make troubleshooting easier with clear logs and planned crash analysis tools.</p></article>
+      </div>
+    </div></section>
+    <section class="section" id="modding"><div class="wrap split">
+      <div class="info-panel"><div class="kicker">A connected workflow</div><h3>One profile. Your whole setup.</h3><p>Keep each installation independent. Add content from supported platforms or local files, then update, enable, disable, or remove it without mixing files between profiles.</p><div class="tagrow"><span class="tag">Modrinth</span><span class="tag">CurseForge</span><span class="tag">Local files</span><span class="tag">Profile isolation</span></div></div>
+      <div class="info-panel"><div class="kicker">More than mods</div><h3>Build the experience you want.</h3><p>Seqora's planned content workflow covers resource packs, shaders, datapacks, and profile configuration alongside regular mod management.</p><div class="tagrow"><span class="tag">Resource packs</span><span class="tag">Shaders</span><span class="tag">Datapacks</span><span class="tag">Configs</span></div></div>
+    </div></section>
+    <section class="section" id="performance"><div class="wrap">
+      <div class="section-head"><div class="kicker">Lightweight by design</div><h2>Control without the clutter.</h2><p>Performance and clarity are core goals. Configure your game before it starts and keep your launcher workflow focused.</p></div>
+      <div class="grid">
+        <article class="feature"><div class="feature-icon">▥</div><h3>Memory Management</h3><p>Set profile-specific memory limits with recommendations based on available system memory.</p></article>
+        <article class="feature"><div class="feature-icon">◉</div><h3>System Monitoring</h3><p>Planned CPU, GPU, RAM, and in-game FPS visibility to help understand system usage.</p></article>
+        <article class="feature"><div class="feature-icon">☼</div><h3>Your Launcher, Your Look</h3><p>Theme, accent color, and language options designed around a clean, customizable interface.</p></article>
+      </div>
+    </div></section>
+    <section class="section" id="about"><div class="wrap">
+      <div class="callout"><div><div class="kicker">The project</div><h2>Meet Seqora Launcher.</h2><p>An independent project built to bring your Minecraft setup together.</p></div><a class="button primary" href="https://github.com/Seqorsy/seqora">Follow development ↗</a></div>
+    </div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><div><span class="footer-brand">SEQORA</span> <span>— Your Minecraft. Your Rules.</span></div><div>Independent community project. Not affiliated with Mojang or Microsoft.</div><div>© <span id="year">2026</span> Seqora Launcher</div></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
